@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Circle Calculator</string>
+    <string name="enter_radius_here">Enter radius here</string>
+    <string name="calculate">Calculate</string>
 </resources>

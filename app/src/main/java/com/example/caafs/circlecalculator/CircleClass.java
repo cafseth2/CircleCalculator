@@ -22,4 +22,6 @@ public class CircleClass {
     public double getCircumference() {
         return Math.PI * radius * 2;
     }
+
+    public double getVolume() { return Math.PI * 1.33 * radius * radius * radius;}
 }
