@@ -113,20 +113,80 @@
         app:layout_constraintTop_toBottomOf="@+id/sidelength"
         app:layout_constraintVertical_bias="0.007" />
 
+    <ImageView
+        android:id="@+id/triangleimage"
+        android:layout_width="212dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/results"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842"
+        app:srcCompat="@drawable/triangle2" />
+
+    <EditText
+        android:id="@+id/triangleside"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter side length"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/trianglebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/triangleimage"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/trianglebutton"
+        android:layout_width="115dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toTopOf="@+id/results"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/triangleimage"
+        app:layout_constraintVertical_bias="1.0" />
+
     <TextView
         android:id="@+id/results"
         android:layout_width="325dp"
-        android:layout_height="135dp"
+        android:layout_height="91dp"
         android:layout_marginBottom="4dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
         android:gravity="center_vertical|center_horizontal"
         android:lines="4"
         android:singleLine="false"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold|italic"
         app:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
