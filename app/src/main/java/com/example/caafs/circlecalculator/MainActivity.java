@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         double rad = Double.parseDouble(radius.getText().toString());
         CircleClass circleOne = new CircleClass(rad);
-        results.setText("Area: " + circleOne.getArea() + "\nCircumference: " + circleOne.getCircumference() + "\nSpherical Volume: " + circleOne.getVolume());
+        results.setText("Area: " + circleOne.getArea() + "\nCircumference: " + circleOne.getCircumference() +
+                "\nSpherical Volume: " + circleOne.getVolume() + "\nSpherical Surface Area: " + circleOne.getSurfaceArea());
     }
 }
